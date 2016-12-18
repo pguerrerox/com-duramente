@@ -1,0 +1,32 @@
+html, body{
+  margin:0;
+  padding:0;
+}
+header{
+  width:100%;
+  height: auto;
+  position:fixed;
+  top:0;
+  background-color:red;
+  box-shadow:0 2px 5px black;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:center;
+}
+.header__logo{
+  width:250px;
+  height:auto;
+  padding: 20px 0;
+}
+header nav{
+  //display: inline-block;
+	//float: right;
+
+
+}
+nav a{
+  //padding:10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
