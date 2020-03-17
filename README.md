@@ -1,2 +1,2 @@
-# duramente.com
-duramente website.
+# ecom.duramente.com
+placeholder for an ecom website...

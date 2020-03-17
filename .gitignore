@@ -1,3 +1,5 @@
 #Comment
 
 _site
+.jekyll-cache
+.vscode
