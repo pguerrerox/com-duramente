@@ -1,9 +1,8 @@
-<template>
-  <div>
-    <Intro />
-    <About />
-    <Skills />
-  </div>
+<template lang="pug">
+  main
+    Intro
+    //- About
+    //- Skills
 </template>
 
 <script>

@@ -1,7 +1,6 @@
 <template lang="pug">
-  section.intro
-    h1 Intro
-    h2 {{ $t('msg') }}
+  div
+    //- components here
 </template>
 
 <script>
