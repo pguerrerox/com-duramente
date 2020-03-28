@@ -1,12 +1,11 @@
 <template lang="pug">
   header
-    h1 Header
     nav
       ul.navbar
         li.navbar-item
-          n-link(:to="localePath('/')") .home
+          n-link(:to="localePath('/')") {{ $t('header.home') }}
         li.navbar-item
-          n-link(:to="localePath('/blog')") .blog
+          n-link(:to="localePath('/blog')") {{ $t('header.blog') }}
       div.lang
         n-link(
           v-for="x in allLocales"
@@ -17,13 +16,37 @@
 <script>
 export default {
   computed: {
-    allLocales(){
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    allLocales() {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale);
     }
   }
-}
+};
 </script>
 
-<style lang="sass">
-
+<style lang="sass" scoped>
+nav
+  display: flex
+  width: 100%
+  height: $header-height
+  justify-content: flex-end
+  align-items: center
+  position: relative
+  ul
+    display: flex
+    flex-direction: row
+    li
+      list-style: none
+      @extend %margin15
+      a
+        font-weight: bold
+        color: $secundary
+      a:hover
+       @extend %markerRed
+  div a
+    text-transform: uppercase
+    color: $secundary
+  ul, div
+    @extend %margin15
+  .nuxt-link-exact-active
+    @extend %markerRed
 </style>

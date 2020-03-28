@@ -21,7 +21,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '@/assets/sass/reset.sass',
+    '@/assets/sass/normalize.sass',
+    '@/assets/sass/typo.sass',
+    '@/assets/sass/_variables.sass'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -56,8 +61,16 @@ export default {
           fallbackLocale: null
         },
       }
-    ]
+    ],
+    [
+      '@nuxtjs/style-resources',
+    ],
   ],
+  styleResources: {
+    sass: [
+      './assets/sass/_variables.sass'
+      ]
+  },
   /*
    ** Build configuration
    */
