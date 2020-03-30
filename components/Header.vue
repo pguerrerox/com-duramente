@@ -10,7 +10,7 @@
         n-link(
           v-for="x in allLocales"
           :key="x.code"
-          :to="switchLocalePath(x.code)") {{ x.code }}
+          :to="switchLocalePath(x.code)") /{{ x.code }}
 </template>
 
 <script>
@@ -30,7 +30,6 @@ nav
   height: $header-height
   justify-content: flex-end
   align-items: center
-  position: relative
   ul
     display: flex
     flex-direction: row
@@ -38,13 +37,12 @@ nav
       list-style: none
       @extend %margin15
       a
-        font-weight: bold
-        color: $secundary
+        // font-weight: bold
+        // color: $terciary
       a:hover
        @extend %markerRed
   div a
-    text-transform: uppercase
-    color: $secundary
+    // color: $terciary
   ul, div
     @extend %margin15
   .nuxt-link-exact-active

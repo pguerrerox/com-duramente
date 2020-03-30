@@ -1,9 +1,7 @@
 <template lang="pug">
   main
-    div.topSection
-    Header
     Intro
-    About
+    //- About
     //- Skills
 </template>
 
@@ -24,16 +22,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.topSection
-  z-index: -1
-  position: absolute
-  width: 100%
-  height: 100vh
-  background-image: url('~assets/imgs/cool-background.svg')
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: top right
-  background: #000000
-  background: -webkit-linear-gradient(to bottom, #434343, #000000)
-  background: linear-gradient(to bottom, #434343, #000000)
+main
+  display: flex
+  flex-direction: column
+  justify-items: center
 </style>

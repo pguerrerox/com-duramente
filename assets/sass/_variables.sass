@@ -1,13 +1,16 @@
 // colors
 $main: #23226B
-$secundary: #000000
+$secundary: #000
+
+// font-colors
+$font-main: #fff
 $main-gradient: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(35,34,107,0.75) 25%, rgba(35,34,107,1) 50%, rgba(35,34,107,0.75) 75%, rgba(255,255,255,0) 100%)
 $red-gradient: linear-gradient(90deg, rgba(255,0,0,0) 0%, rgba(255,0,0,0.75) 25%, rgba(255,0,0,0.75) 75%, rgba(255,0,0,0) 100%)
 
 // spacing
-$max-width: 1204px
+$max-width: 1200px
 $normal-section-height: 500px
-$small-section-height: 300px
+$small-section-height: 400px
 $header-height: 60px
 
 // placeholders
@@ -15,8 +18,32 @@ $header-height: 60px
   margin: 15px
 
 %markerRed
-  background: rgb(255,0,0)
+  background: #ff0000
   background: $red-gradient
   background-size: 100% 35%
   background-position: top
   background-repeat: no-repeat
+
+%main-section
+  width: 100%
+  height: $normal-section-height
+
+%small-section
+  width: 100%
+  height: $small-section-height
+
+// buttons
+%button-normal
+  padding: 10px 20px
+  background: $font-main
+  color: $secundary
+  border-radius: 5px
+  transition: all .15s
+%button-normal-hover
+  color: #ff0000
+  background: #00000000
+  box-shadow: 0px 0 0px 2px #ff0000
+%button-normal-clic
+  background: $font-main
+  box-shadow: 0 0 0 0 #00000000
+  

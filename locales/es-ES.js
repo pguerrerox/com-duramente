@@ -1,12 +1,21 @@
 export default {
-  intro: {
-    mainTitle: 'Hola, Yo soy Pedro Guerrero.',
-    botTitle: 'self-tought web developer'
+  header:{
+    home: '.inicio',
+    aboutme: '.sobre mi',
+    skills: '.habilidades',
+    projects: '.projectos',
+    blog: '.blog'
   },
-  hello: 'Hola',
-  msg: 'Dimelo Palomon',
+  intro: {
+    title: {
+      top: 'Mi nombre es Pedro Guerrero',
+      bot: 'Desarrollador web autodidacta'
+    },
+    shortInfo: 'un desarrollador web, autodidacta.'
+  },
+  msg: 'Whats, up',
   pages: {
-    home: 'Inicio',
+    home: 'Home',
     blog: 'Blog'
   }
 }

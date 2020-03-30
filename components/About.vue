@@ -1,12 +1,13 @@
 <template lang="pug">
   section.aboutme
-      h3  About Me
+      h3  {{ $t('about.title') }}
       div.content
-        p 
-
+        p {{ $t('about.content') }}
 </template>
 
 <style lang="sass" scoped>
-.aboutme
-  height: 2000px
+section
+  @extend %small-section
+
+  
 </style>
