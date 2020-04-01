@@ -1,22 +1,22 @@
 <template lang="pug">
   main
     Intro
-    //- About
-    //- Skills
+    About
+    Projects
 </template>
 
 <script>
 import Header from "~/components/Header";
 import Intro from "~/components/Intro";
 import About from "~/components/About";
-import Skills from "~/components/Skills";
+import Projects from "~/components/Projects";
 
 export default {
   components: {
     Header,
     Intro,
     About,
-    Skills
+    Projects
   }
 };
 </script>
